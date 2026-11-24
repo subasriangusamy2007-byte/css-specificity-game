@@ -1,24 +1,4 @@
 
-const heading = document.getElementById("heading");
-
-const rules = [
-    {
-        name: "Element Selector",
-        selector: "h2",
-        color: "blue"
-    },
-    {
-        name: "Class Selector",
-        selector: ".title",
-        color: "green"
-    },
-    {
-        name: "ID Selector",
-        selector: "#heading",
-        color: "red"
-    }
-];
-
 let score = 0;
 
 function startGame() {
@@ -26,14 +6,19 @@ function startGame() {
         "Which selector has the highest specificity?\n1. h2\n2. .title\n3. #heading\nEnter 1, 2 or 3:"
     );
 
+    const explanation = document.getElementById("explanation");
+    const scoreDisplay = document.getElementById("score");
+
     if (answer === "3") {
-        alert("Correct! You earned 10 points.");
         score += 10;
+        explanation.textContent =
+            "Correct! ID selectors have higher specificity than class and element selectors.";
     } else {
-        alert("Try again! ID selector has the highest specificity.");
+        explanation.textContent =
+            "Incorrect! The ID selector (#heading) has the highest specificity.";
     }
 
-    alert("Your score: " + score);
+    scoreDisplay.textContent = score;
 }
 
 document.querySelector("button").addEventListener("click", startGame);
