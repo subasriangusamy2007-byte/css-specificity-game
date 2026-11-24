@@ -1,0 +1,43 @@
+
+/* CSS Specificity Game */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+h1 {
+    color: blue;
+}
+
+.title {
+    color: green;
+}
+
+#heading {
+    color: red;
+}
+
+.description {
+    color: gray;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
