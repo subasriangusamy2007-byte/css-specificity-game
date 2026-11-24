@@ -22,3 +22,19 @@ function startGame() {
 }
 
 document.querySelector("button").addEventListener("click", startGame);
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#explanation {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333;
+}
